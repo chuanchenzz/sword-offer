@@ -13,6 +13,11 @@ public class InterviewQuestionThree {
         if(intArray == null || intArray.length == 0){
             throw new IllegalArgumentException();
         }
+        for (int i = 0; i < intArray.length; i++){
+            if(intArray[i] < 0 || intArray[i] > intArray.length - 1){
+                throw new IllegalArgumentException();
+            }
+        }
         for(int i = 0; i < intArray.length; i++){
             while(intArray[i] != i){
                 if(intArray[intArray[i]] == intArray[i]){
