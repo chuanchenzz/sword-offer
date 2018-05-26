@@ -7,7 +7,7 @@ public class InterviewQuestionThree {
     /**
      *
      * @param intArray
-     * @return no result: -1
+     * @return no result: -1 or throw exception
      */
     public static int findRepeatDigital(int[] intArray){
         if(intArray == null || intArray.length == 0){
